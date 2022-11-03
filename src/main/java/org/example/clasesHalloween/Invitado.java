@@ -5,7 +5,7 @@ public class Invitado {
 
     public String nombre;
     public String apellido;
-    public byte edad;
+    public int edad;
     public String id;
     public boolean aplicaCover;
     public float valorCover;
@@ -15,6 +15,21 @@ public class Invitado {
     //CONSTRUCTOR
 
     public Invitado() {
+
+    }
+
+    public Invitado(String nombre, String apellido, int edad, String id, boolean aplicaCover, float valorCover, char disfraz) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.id = id;
+        this.aplicaCover = aplicaCover;
+        this.valorCover = valorCover;
+        this.disfraz = disfraz;
+    }
+
+    public Invitado(String nombre) {
+        this.nombre = nombre;
     }
 
     //METODOS
